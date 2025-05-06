@@ -14,3 +14,5 @@ alias ll='ls -alF'
 if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi
+
+cd ~/Dev/
