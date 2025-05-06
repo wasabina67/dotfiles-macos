@@ -3,6 +3,8 @@
 FILES=(
     ".gitconfig"
     ".zprofile"
+    ".zsh_aliases"
+    ".zshrc"
 )
 DOTFILES_DIR="/Users/ssato/dotfiles-macos"
 
