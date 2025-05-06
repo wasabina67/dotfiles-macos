@@ -1,0 +1,7 @@
+[user]
+	name = wasabina67
+	email = wasabina67@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
