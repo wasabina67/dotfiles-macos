@@ -1,6 +1,8 @@
 setopt NO_BEEP
 
 export PS1="%n@local %1~ %# "
+export PS1='\[\e]0;\u@\h: \w\a\]\[\e[94m\]\u@local\[\e[94m\](\t)(\#) \[\e[92m\]\w \[\e[95m\]$(__git_ps1 "(%s)")\[\e[94m\]\$ \[\e[97m\]'
+export PS2='> '
 
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
