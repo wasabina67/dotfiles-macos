@@ -124,6 +124,13 @@ fi
 
 export PATH="/usr/local/bin:$PATH"
 
+# .env
+if [ -f ~/.env ]; then
+    set -a
+    . ~/.env
+    set +a
+fi
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
