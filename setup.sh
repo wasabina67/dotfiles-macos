@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 FILES=(
+    "bin"
     ".gitconfig"
     ".zprofile"
     ".zsh_aliases"
