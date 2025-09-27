@@ -14,3 +14,7 @@ for f in "${FILES[@]}"; do
         ln -s "${DOTFILES_DIR}/${f}" "${HOME}/${f}"
     fi
 done
+
+chmod +x ./bin/stopwatch
+chmod +x ./bin/ticktack
+chmod +x ./bin/tokyodate

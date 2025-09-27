@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo $(TZ='Asia/Tokyo' date '+%Y-%m-%d')

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+trap 'echo ""; exit 130;' INT
+
+start_time=$(date +%s)
+hours=00
+minutes=00
+seconds=00
+
+while true; do
+    current_time=$(date +%s)
+    elapsed=$((current_time - start_time))
+    hours=$(printf "%02d" $((elapsed / 3600)))
+    minutes=$(printf "%02d" $(((elapsed % 3600) / 60)))
+    seconds=$(printf "%02d" $((elapsed % 60)))
+    echo -ne "\r$hours:$minutes:$seconds"
+    sleep 1
+done
