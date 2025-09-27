@@ -3,6 +3,8 @@
 FILES=(
     "bin"
     ".gitconfig"
+    ".sqliterc"
+    ".vimrc"
     ".zprofile"
     ".zsh_aliases"
     ".zshrc"
