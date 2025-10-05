@@ -114,6 +114,7 @@ setopt NO_BEEP
 # export PS1='\[\e]0;\u@\h: \w\a\]\[\e[94m\]\u@local\[\e[94m\](\t)(\#) \[\e[92m\]\w \[\e[95m\]$(__git_ps1 "(%s)")\[\e[94m\]\$ \[\e[97m\]'
 # export PS2='> '
 
+# brew
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
     autoload -Uz compinit
@@ -126,8 +127,6 @@ alias ll='ls -alF'
 if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi
-
-export PATH="/usr/local/bin:$PATH"
 
 # .env
 if [ -f ~/.env ]; then
