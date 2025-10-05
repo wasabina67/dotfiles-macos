@@ -7,3 +7,5 @@
 	editor = vim
 [credential "https://github.com"]
 	helper = !/opt/homebrew/bin/gh auth git-credential
+[pager]
+	branch = false
