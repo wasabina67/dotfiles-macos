@@ -142,3 +142,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # uv
 . "$HOME/.local/bin/env"
+
+# cargo
+. "$HOME/.cargo/env"
